@@ -66,6 +66,9 @@ p,span,h1,h2,h3,h4,h5,h6 {
 .site-nav:hover {
   color: var(--logo-span-color)
 }
+.site-nav:focus {
+  color: var(--logo-span-color)
+}
 
 .site-nav {
 display: inline-block;
@@ -96,6 +99,15 @@ padding-bottom: 32px; }
   fill:var(--logo-span-color)
 }
 .phone:hover .nav-icon-phone {
+  fill:var(--logo-span-color)
+}
+.phone:focus {
+  color: var(--logo-span-color)
+}
+.phone:focus .nav-icon {
+  fill:var(--logo-span-color)
+}
+.phone:focus .nav-icon-phone {
   fill:var(--logo-span-color)
 }
 .header-container {
@@ -156,6 +168,10 @@ padding-bottom: 32px; }
 }
 .title-button:hover {
   background-color: #2196F399;
+}
+.title-button:focus {
+  background-color: #2196F399;
+  outline: none;
 }
 .title-list {
   margin-bottom: 10px;
@@ -332,6 +348,13 @@ padding-bottom: 32px; }
   cursor:pointer ;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.btn:focus {
+  background-color: #2196F3;
+  color:#F5F4FA;
+  cursor:pointer ;
+  outline: none ;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .lead-list {
     font-weight: 700;
     font-size: 14px;
@@ -375,7 +398,9 @@ box-sizing: border-box;
 }
 .portfolio-list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+}
+.portfolio-link:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list:nth-child(3n) {
   margin-right: 0px;
@@ -438,6 +463,13 @@ margin-right: 10px
 .social-item:not(:last-child) {
   padding-right: 10px;
 }
+.social-link:focus {
+  background-color: var(--logo-span-color);
+  outline: none;
+}
+.social-link:focus .aside-icon {
+  fill:var(--accent-color);
+}
 .client-icon {
   width: 106px;
   height: 60px;
@@ -469,6 +501,16 @@ margin-right: 10px
 }
 .client-item:hover {
   border: 1px solid #2196F3;
+}
+.client-link:focus {
+  outline: none;
+  fill: var(--logo-span-color)
+}
+.client-item:focus .client-icon{
+  fill:#2196F3
+}
+.client-link:focus {
+  fill: var(--logo-span-color)
 }
 .footer-container {
   display: flex;
@@ -511,6 +553,10 @@ margin-right: 10px
 }
 .foot-social-link:hover {
   background-color: var(--logo-span-color)
+}
+.foot-social-link:focus {
+  background-color:var(--logo-span-color);
+  outline: none;
 }
 .foot-contain {
   padding-top:60px;
